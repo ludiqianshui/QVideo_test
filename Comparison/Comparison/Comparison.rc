@@ -1,0 +1,221 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Comparison.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "Comparison DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Comparison"
+            VALUE "LegalCopyright", "版权所有 (C) 2009"
+            VALUE "OriginalFilename", "Comparison.DLL"
+            VALUE "ProductName", "Comparison Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMPARISONDLG DIALOGEX 0, 0, 438, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Comparison"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,403,197,28,14
+    PUSHBUTTON      "Cancel",IDCANCEL,373,223,26,6,NOT WS_VISIBLE
+    CONTROL         "",IDC_VIDEOWINDOW1,"Static",SS_BLACKFRAME | SS_SUNKEN,7,7,181,145
+    CONTROL         "",IDC_VIDEOWINDOW2,"Static",SS_BLACKFRAME | SS_SUNKEN,190,7,181,145
+    PUSHBUTTON      "Capture Setting",IDC_BTN_CAPSETTING1,49,152,57,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Capture Setting",IDC_BTN_CAPSETTING2,232,152,57,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Snap shot",IDC_BTN_SNAPSHOT1,7,152,41,12
+    PUSHBUTTON      "Snap shot",IDC_BTN_SNAPSHOT2,190,152,41,12
+    EDITTEXT        IDC_EDIT_TRACEWND1,7,165,181,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT_TRACEWND2,190,165,181,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LISTBOX         IDC_SCRIPTLIST,373,7,58,145,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Start",IDC_BTN_STARTTEST,373,182,28,14
+    EDITTEXT        IDC_EDIT_CURRENTCASE,373,153,58,12,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    PUSHBUTTON      "Project Setting",IDC_BTN_PROJECTSETTING,373,167,58,14
+    PUSHBUTTON      "Pause",IDC_BTN_PAUSETEST,403,182,28,14
+    PUSHBUTTON      "Stop",IDC_BTN_STOPTEST,373,197,28,14
+    LTEXT           "",IDC_STATIC_TESTSTATUS,7,215,364,8
+    LTEXT           "",IDC_STATIC_CURRENCTCASE,374,215,57,8
+END
+
+IDD_PROJECTSETTING DIALOGEX 0, 0, 311, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,162,50,14
+    EDITTEXT        IDC_EDIT_PROJECTNAME,72,84,52,14,ES_AUTOHSCROLL
+    LTEXT           "Test Event",IDC_STATIC,12,87,36,8
+    LTEXT           "Version",IDC_STATIC,12,105,30,8
+    EDITTEXT        IDC_EDIT_VERSION,72,103,52,14,ES_AUTOHSCROLL
+    LTEXT           "Reference STR",IDC_STATIC,12,124,49,8
+    EDITTEXT        IDC_EDIT_REFERENCESTR,72,122,161,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load STR",IDC_BUTTON1,238,122,66,14
+    LTEXT           "RCU Signal DB",IDC_STATIC,12,143,46,8
+    EDITTEXT        IDC_EDIT_SIGNALDB,72,141,161,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load Signal DB",IDC_BUTTON2,238,141,66,14
+    PUSHBUTTON      "Broswer",IDC_BTN_NEWPROJECT,240,20,57,14
+    GROUPBOX        "New Version",IDC_STATIC,7,51,297,108
+    EDITTEXT        IDC_EDIT_NEWPROJECTFOLDER,72,20,161,14,ES_AUTOHSCROLL
+    LTEXT           "New Project Foler",IDC_STATIC,12,24,58,8
+    GROUPBOX        "New Project",IDC_STATIC,7,7,297,40
+    EDITTEXT        IDC_EDITPROJECTFOLDER,72,65,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Broswer",IDC_BTN_PROJECTFOLDER,238,66,66,14
+    LTEXT           "Project Folder",IDC_STATIC,12,70,46,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COMPARISONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_PROJECTSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Comparison.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

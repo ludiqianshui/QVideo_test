@@ -1,0 +1,6 @@
+; AVCompare.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AVCompare"
+
+EXPORTS
+    ; Explicit exports can go here

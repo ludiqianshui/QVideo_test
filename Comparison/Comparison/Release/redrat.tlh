@@ -1,0 +1,833 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.21022.08 (dd40910e).
+//
+// e:\easytest\comparison\comparison\release\redrat.tlh
+//
+// C++ source equivalent of Win32 type library C:\\Program Files\\RedRat\\RedRat SDK\\RedRat.tlb
+// compiler-generated file created 06/16/10 at 09:10:39 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("78ee5360-12d2-3a02-9d0d-a356d8e9390c"))
+/* LIBID */ __RedRat;
+struct __declspec(uuid("945c13e0-9827-334e-baf5-91e3e99b46ff"))
+/* dual interface */ ISignalInEventArgs;
+struct __declspec(uuid("a6c28a1f-c734-3282-9e92-5adc5d31ee32"))
+/* dual interface */ ICCWRedRat3;
+struct CCWRR4DeviceInfo;
+struct ToggleBit;
+struct CCWRR3LocationInfo;
+struct CCWModulatedSignal;
+struct __declspec(uuid("e3fc878f-7b9e-32e0-8cdd-269a590fbe77"))
+/* dual interface */ IIROutputChangedEventArgs;
+struct /* coclass */ CCWIROutputChangedEventArgs;
+struct CCWDoubleModulatedSignal;
+struct __declspec(uuid("fb6f0bb2-9efb-3749-ae5f-2051eb177092"))
+/* dual interface */ ISignalDB;
+struct /* coclass */ CCWSignalDB;
+struct /* coclass */ EZUSBSysWrapper;
+struct /* coclass */ BusyEventArgs;
+struct CCWRR4LocationInfo;
+struct /* coclass */ PlugEventHandler;
+struct __declspec(uuid("3472a783-51bd-36be-92e7-2686adeaf32d"))
+/* dual interface */ IRedRatLookup;
+struct /* coclass */ RedRatLookup;
+struct __declspec(uuid("05d85aff-3217-3159-902f-395cb3e57446"))
+/* dispinterface */ IRR4Events;
+struct __declspec(uuid("b880ac5c-8f2c-3c56-ae8b-9d1ee15db5b9"))
+/* dual interface */ ICCWRedRat4;
+struct /* coclass */ CCWRedRat4;
+struct /* coclass */ RCSignalInEventHandler;
+struct /* coclass */ LearningSignalInEventHandler;
+struct /* coclass */ IROuputsChangedEventHandler;
+enum SignalEventAction;
+struct __declspec(uuid("9bcc4f20-b4da-3ae6-97fd-c9a064c87333"))
+/* dispinterface */ IRR3Events;
+struct /* coclass */ CCWRedRat3;
+struct CCWAVDeviceInfo;
+struct /* coclass */ LocalEventHandlerWrapper;
+struct /* coclass */ XMP1SigData;
+struct CCWIrDaSignal;
+struct CCWSubPacket;
+enum AVDeviceType;
+struct /* coclass */ CyUSBWrapper;
+struct __declspec(uuid("727cb9f5-461e-34e6-82c8-066f23c7457b"))
+/* dual interface */ ICCWVirtualRedRat2;
+struct /* coclass */ CCWVirtualRedRat2;
+struct /* coclass */ CCWSignalInEventArgs;
+struct CCWRR3DeviceInfo;
+struct /* coclass */ RCSignalInEventHandler_2;
+struct /* coclass */ LearningSignalInEventHandler_2;
+struct __declspec(uuid("a6502b0a-e8b3-3d25-b596-3a2493c9edf5"))
+/* dual interface */ _CCWSignalDB;
+struct __declspec(uuid("25cf2f17-6e65-344e-83c5-c72fe5299eaf"))
+/* dual interface */ _EZUSBSysWrapper;
+struct __declspec(uuid("8d436e4e-317a-3e6c-afaf-eec96d4df920"))
+/* dual interface */ _BusyEventArgs;
+struct __declspec(uuid("3c97c4c1-e3c2-3ece-a5b0-6e7a4f2a4e3f"))
+/* dual interface */ _PlugEventHandler;
+struct __declspec(uuid("d87022a2-db77-35c5-95e9-af6167428c05"))
+/* dual interface */ _RCSignalInEventHandler;
+struct __declspec(uuid("d4d61706-a562-3a06-a942-b40c846db1f6"))
+/* dual interface */ _LearningSignalInEventHandler;
+struct __declspec(uuid("c11d4519-f5d8-3432-9b93-1a26ddd3bc84"))
+/* dual interface */ _IROuputsChangedEventHandler;
+struct __declspec(uuid("baa9ccf2-e5af-3a82-95c8-f17ce98eb8d5"))
+/* dual interface */ _RCSignalInEventHandler_2;
+struct __declspec(uuid("d706a227-c7d4-34ad-be67-b42caa1e5c3c"))
+/* dual interface */ _LearningSignalInEventHandler_2;
+struct __declspec(uuid("36f14dc6-e689-39eb-b094-63beae2c84c4"))
+/* dual interface */ _LocalEventHandlerWrapper;
+struct __declspec(uuid("32bf6943-3bf2-3200-953f-35eeca0ef3e2"))
+/* dual interface */ _XMP1SigData;
+struct __declspec(uuid("842fa61f-e643-3f63-b6be-241d6f9b1c52"))
+/* dual interface */ _CyUSBWrapper;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IIROutputChangedEventArgs, __uuidof(IIROutputChangedEventArgs));
+_COM_SMARTPTR_TYPEDEF(IRR4Events, __uuidof(IRR4Events));
+_COM_SMARTPTR_TYPEDEF(ISignalInEventArgs, __uuidof(ISignalInEventArgs));
+_COM_SMARTPTR_TYPEDEF(IRR3Events, __uuidof(IRR3Events));
+_COM_SMARTPTR_TYPEDEF(ISignalDB, __uuidof(ISignalDB));
+_COM_SMARTPTR_TYPEDEF(ICCWRedRat4, __uuidof(ICCWRedRat4));
+_COM_SMARTPTR_TYPEDEF(ICCWVirtualRedRat2, __uuidof(ICCWVirtualRedRat2));
+_COM_SMARTPTR_TYPEDEF(ICCWRedRat3, __uuidof(ICCWRedRat3));
+_COM_SMARTPTR_TYPEDEF(IRedRatLookup, __uuidof(IRedRatLookup));
+_COM_SMARTPTR_TYPEDEF(_CCWSignalDB, __uuidof(_CCWSignalDB));
+_COM_SMARTPTR_TYPEDEF(_EZUSBSysWrapper, __uuidof(_EZUSBSysWrapper));
+_COM_SMARTPTR_TYPEDEF(_BusyEventArgs, __uuidof(_BusyEventArgs));
+_COM_SMARTPTR_TYPEDEF(_PlugEventHandler, __uuidof(_PlugEventHandler));
+_COM_SMARTPTR_TYPEDEF(_RCSignalInEventHandler, __uuidof(_RCSignalInEventHandler));
+_COM_SMARTPTR_TYPEDEF(_LearningSignalInEventHandler, __uuidof(_LearningSignalInEventHandler));
+_COM_SMARTPTR_TYPEDEF(_IROuputsChangedEventHandler, __uuidof(_IROuputsChangedEventHandler));
+_COM_SMARTPTR_TYPEDEF(_RCSignalInEventHandler_2, __uuidof(_RCSignalInEventHandler_2));
+_COM_SMARTPTR_TYPEDEF(_LearningSignalInEventHandler_2, __uuidof(_LearningSignalInEventHandler_2));
+_COM_SMARTPTR_TYPEDEF(_LocalEventHandlerWrapper, __uuidof(_LocalEventHandlerWrapper));
+_COM_SMARTPTR_TYPEDEF(_XMP1SigData, __uuidof(_XMP1SigData));
+_COM_SMARTPTR_TYPEDEF(_CyUSBWrapper, __uuidof(_CyUSBWrapper));
+
+//
+// Type library items
+//
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("97382400-2037-3b8d-a5b2-23a53563a9f1"))
+CCWRR4DeviceInfo
+{
+    BSTR company;
+    BSTR productName;
+    BSTR serialNo;
+    long verMajor;
+    long verMinor;
+    BSTR ipAddress;
+    BSTR macAddress;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("75c4b156-8c69-3399-88eb-ce74245da02c"))
+ToggleBit
+{
+    long bitNo;
+    long len1;
+    long len2;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("d815c93f-d52f-305f-8970-8b4b9e28f13a"))
+CCWRR3LocationInfo
+{
+    long serialNo;
+    BSTR name;
+    BSTR description;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("ca409d3d-f7fd-3d6c-82fe-3a48b4f1b9b0"))
+CCWModulatedSignal
+{
+    BSTR name;
+    BSTR description;
+    double modFreq;
+    double intraSigPause;
+    long noRepeats;
+    SAFEARRAY * lengths;
+    SAFEARRAY * sigData;
+    long terminated;
+    SAFEARRAY * toggleData;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("e3fc878f-7b9e-32e0-8cdd-269a590fbe77"))
+IIROutputChangedEventArgs : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IROutputState (
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("95e30a2c-c724-3d6b-b76d-dd45906248df"))
+CCWIROutputChangedEventArgs;
+    // interface _Object
+    // [ default ] interface IIROutputChangedEventArgs
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("51e5877e-63f6-3ef8-8a46-0b0831db59ef"))
+CCWDoubleModulatedSignal
+{
+    long terminated;
+    BSTR name;
+    BSTR description;
+    struct CCWModulatedSignal signal1;
+    struct CCWModulatedSignal signal2;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("0d339cc4-c62b-302b-91fd-948e4a3664d1"))
+CCWSignalDB;
+    // [ default ] interface _CCWSignalDB
+    // interface _Object
+    // interface ISignalDB
+
+struct __declspec(uuid("f81111e4-7190-312c-b340-a06a51a3f769"))
+EZUSBSysWrapper;
+    // [ default ] interface _EZUSBSysWrapper
+    // interface _Object
+
+struct __declspec(uuid("1d3ad210-217e-3ae0-8c0c-2f00f29c6394"))
+BusyEventArgs;
+    // [ default ] interface _BusyEventArgs
+    // interface _Object
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("202da6b4-1e22-34b0-ae98-d3096af08b94"))
+CCWRR4LocationInfo
+{
+    BSTR macAddress;
+    BSTR ipAddress;
+    BSTR name;
+    BSTR description;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("64b09259-ef9d-3497-a357-b82ac7cd53da"))
+PlugEventHandler;
+    // [ default ] interface _PlugEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("c0d48de2-4769-396e-a09f-68ae52b07e2c"))
+RedRatLookup;
+    // interface _Object
+    // [ default ] interface IRedRatLookup
+
+struct __declspec(uuid("05d85aff-3217-3159-902f-395cb3e57446"))
+IRR4Events : IDispatch
+{};
+
+struct __declspec(uuid("3ff9adcc-71c2-3e5c-b222-c738785667e9"))
+CCWRedRat4;
+    // interface _Object
+    // [ default ] interface ICCWRedRat4
+    // [ default, source ] dispinterface IRR4Events
+
+struct __declspec(uuid("6eee53dd-84ac-3905-9d65-94975e3ef504"))
+RCSignalInEventHandler;
+    // [ default ] interface _RCSignalInEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("4a6f3ac4-2e7b-3f35-9778-d297f25c238f"))
+LearningSignalInEventHandler;
+    // [ default ] interface _LearningSignalInEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("3a7af2ea-373a-3e5d-afe5-798b72f67744"))
+IROuputsChangedEventHandler;
+    // [ default ] interface _IROuputsChangedEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+enum __declspec(uuid("42b71921-e6b2-3741-8fe8-eda46d34f9b3"))
+SignalEventAction
+{
+    SignalEventAction_SELF_DETERMINE = 0,
+    SignalEventAction_MODULATED_SIGNAL = 1,
+    SignalEventAction_IRDA_PACKET = 2,
+    SignalEventAction_FLASH_CODE_SIGNAL = 3,
+    SignalEventAction_EXCEPTION = 4,
+    SignalEventAction_RC_DETECTOR_ENABLED = 5,
+    SignalEventAction_RC_DETECTOR_DISABLED = 6,
+    SignalEventAction_SIGNAL_ADDED = 7,
+    SignalEventAction_SIGNAL_REMOVED = 8,
+    SignalEventAction_SIGNAL_UPDATED = 9,
+    SignalEventAction_INPUT_CANCELLED = 10
+};
+
+struct __declspec(uuid("945c13e0-9827-334e-baf5-91e3e99b46ff"))
+ISignalInEventArgs : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Action (
+        /*[out,retval]*/ enum SignalEventAction * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_ModulatedSignal (
+        /*[out,retval]*/ struct CCWModulatedSignal * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_Exception (
+        /*[out,retval]*/ struct _Exception * * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_TimeStamp (
+        /*[out,retval]*/ DATE * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_QueueSize (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("9bcc4f20-b4da-3ae6-97fd-c9a064c87333"))
+IRR3Events : IDispatch
+{};
+
+struct __declspec(uuid("d90ef270-72f8-38e2-a15a-e71b1f5d157d"))
+CCWRedRat3;
+    // interface _Object
+    // [ default ] interface ICCWRedRat3
+    // [ default, source ] dispinterface IRR3Events
+
+struct __declspec(uuid("0e6cbe56-449f-3fac-9935-888f665c0f45"))
+LocalEventHandlerWrapper;
+    // [ default ] interface _LocalEventHandlerWrapper
+    // interface _Object
+
+struct __declspec(uuid("79ecdb14-9a58-3016-a079-3f3b08e2c863"))
+XMP1SigData;
+    // [ default ] interface _XMP1SigData
+    // interface _Object
+
+#pragma pack(push, 8)
+
+struct __declspec(uuid("c0bdc69c-c32f-3797-a017-0fd1988690f7"))
+CCWIrDaSignal
+{
+    BSTR name;
+    BSTR descritpion;
+    double interSubPacketPause;
+    long noSubPackets;
+    SAFEARRAY * subPacketArray;
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("45cc09f9-7756-3153-b4ec-9a7729d9c576"))
+CCWSubPacket
+{
+    SAFEARRAY * data;
+};
+
+#pragma pack(pop)
+
+enum __declspec(uuid("92128030-07bc-31bf-844e-5eea9f971866"))
+AVDeviceType
+{
+    AVDeviceType_TV = 0,
+    AVDeviceType_VCR = 1,
+    AVDeviceType_DVD = 2,
+    AVDeviceType_CAMCORDER = 3,
+    AVDeviceType_DVD_RECORDER = 4,
+    AVDeviceType_PVR = 5,
+    AVDeviceType_CD_PLAYER = 6,
+    AVDeviceType_AMP = 7,
+    AVDeviceType_TAPE_DECK = 8,
+    AVDeviceType_TUNER = 9,
+    AVDeviceType_MINI_DISK = 10,
+    AVDeviceType_SAT_RECEIVER = 11,
+    AVDeviceType_SET_TOP_BOX = 12,
+    AVDeviceType_OTHER = 13
+};
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("6145cc6a-4867-3a8f-a998-4d7ca584b449"))
+CCWAVDeviceInfo
+{
+    BSTR name;
+    BSTR manufacturer;
+    BSTR deviceModelNumber;
+    BSTR remoteModelNumber;
+    enum AVDeviceType AVDeviceType;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("fb6f0bb2-9efb-3749-ae5f-2051eb177092"))
+ISignalDB : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AddDeviceDB (
+        /*[in]*/ BSTR dbFileName ) = 0;
+      virtual HRESULT __stdcall AddDeviceDB_2 (
+        /*[in]*/ BSTR dbFileName,
+        /*[in]*/ VARIANT_BOOL readWrite ) = 0;
+      virtual HRESULT __stdcall SaveDeviceDB (
+        /*[in]*/ BSTR dbFileName ) = 0;
+      virtual HRESULT __stdcall AddAVDevice (
+        /*[in]*/ BSTR avDeviceName ) = 0;
+      virtual HRESULT __stdcall RemoveAVDevice (
+        /*[in]*/ BSTR avDeviceName ) = 0;
+      virtual HRESULT __stdcall GetAVDeviceInfo (
+        /*[in]*/ BSTR avDeviceName,
+        /*[out,retval]*/ struct CCWAVDeviceInfo * pRetVal ) = 0;
+      virtual HRESULT __stdcall SetAVDeviceInfo (
+        /*[in,out]*/ struct CCWAVDeviceInfo * newAVDeviceInfo ) = 0;
+      virtual HRESULT __stdcall GetDeviceNames (
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetSignalNames (
+        /*[in]*/ BSTR avDeviceName,
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall AddSignal (
+        /*[in]*/ BSTR avDeviceName,
+        /*[in,out]*/ struct CCWModulatedSignal * newSig,
+        /*[in]*/ VARIANT_BOOL overWrite ) = 0;
+      virtual HRESULT __stdcall AddDoubleModSignal (
+        /*[in]*/ BSTR avDeviceName,
+        /*[in,out]*/ struct CCWDoubleModulatedSignal * newSig,
+        /*[in]*/ VARIANT_BOOL overWrite ) = 0;
+      virtual HRESULT __stdcall RemoveSignal (
+        /*[in]*/ BSTR avDeviceName,
+        /*[in]*/ BSTR signalName ) = 0;
+      virtual HRESULT __stdcall GetSignal (
+        /*[in]*/ BSTR avDeviceName,
+        /*[in]*/ BSTR signalName,
+        /*[out,retval]*/ struct CCWModulatedSignal * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetDoubleModSignal (
+        /*[in]*/ BSTR avDeviceName,
+        /*[in]*/ BSTR signalName,
+        /*[out,retval]*/ struct CCWDoubleModulatedSignal * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetIrDaSignal (
+        /*[in]*/ BSTR avDeviceName,
+        /*[in]*/ BSTR signalName,
+        /*[out,retval]*/ struct CCWIrDaSignal * pRetVal ) = 0;
+      virtual HRESULT __stdcall DecodeSignal (
+        /*[in,out]*/ struct CCWModulatedSignal * inSig,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall SetDebugOutput (
+        /*[in]*/ BSTR textFile ) = 0;
+      virtual HRESULT __stdcall SignalToXML (
+        /*[in,out]*/ struct CCWModulatedSignal * inSig,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall XMLToSignal (
+        /*[in]*/ BSTR xml,
+        /*[out,retval]*/ struct CCWModulatedSignal * pRetVal ) = 0;
+      virtual HRESULT __stdcall IrDaPacketToXML (
+        /*[in,out]*/ struct CCWIrDaSignal * inSig,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall XMLToIrDaPacket (
+        /*[in]*/ BSTR xml,
+        /*[out,retval]*/ struct CCWIrDaSignal * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_DecoderSMCreateDelta (
+        /*[out,retval]*/ double * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_DecoderSMCreateDelta (
+        /*[in]*/ double pRetVal ) = 0;
+      virtual HRESULT __stdcall get_DecoderSMDecodeDelta (
+        /*[out,retval]*/ double * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_DecoderSMDecodeDelta (
+        /*[in]*/ double pRetVal ) = 0;
+};
+
+struct __declspec(uuid("b880ac5c-8f2c-3c56-ae8b-9d1ee15db5b9"))
+ICCWRedRat4 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall UnHookEvents ( ) = 0;
+      virtual HRESULT __stdcall Connect ( ) = 0;
+      virtual HRESULT __stdcall Disconnect ( ) = 0;
+      virtual HRESULT __stdcall IsConnected (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall EnableIROutput (
+        /*[in]*/ long output ) = 0;
+      virtual HRESULT __stdcall DisableIROutput (
+        /*[in]*/ long output ) = 0;
+      virtual HRESULT __stdcall SetAllIROutputsEnabled (
+        /*[in]*/ VARIANT_BOOL onOff ) = 0;
+      virtual HRESULT __stdcall get_EnabledIROutputs (
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_EnabledIROutputs (
+        /*[in]*/ SAFEARRAY * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_NoIROutputs (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_MaxNumLengths (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_MaxNumLengths (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SignalMemorySize (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SignalMemorySize (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_RCDetectorEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_RCDetectorEnabled (
+        /*[in]*/ VARIANT_BOOL pRetVal ) = 0;
+      virtual HRESULT __stdcall ClearRCSignalInQueue ( ) = 0;
+      virtual HRESULT __stdcall get_DeviceInformation (
+        /*[out,retval]*/ struct CCWRR4DeviceInfo * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_LocationInformation (
+        /*[out,retval]*/ struct CCWRR4LocationInfo * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_LocationInformation (
+        /*[in]*/ struct CCWRR4LocationInfo pRetVal ) = 0;
+      virtual HRESULT __stdcall get_FirmwareVersion (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall Blink ( ) = 0;
+      virtual HRESULT __stdcall GetModulatedSignal (
+        /*[in]*/ long timeout ) = 0;
+      virtual HRESULT __stdcall CancelSignalInput ( ) = 0;
+      virtual HRESULT __stdcall OutputModulatedSignal (
+        /*[in,out]*/ struct CCWModulatedSignal * outSig ) = 0;
+      virtual HRESULT __stdcall OutputIrDaSignal (
+        /*[in,out]*/ struct CCWIrDaSignal * outSig ) = 0;
+      virtual HRESULT __stdcall OutputProntoSignal (
+        /*[in]*/ BSTR prontoSignalData ) = 0;
+      virtual HRESULT __stdcall OutputSignal (
+        /*[in]*/ BSTR deviceName,
+        /*[in]*/ BSTR signalName ) = 0;
+      virtual HRESULT __stdcall SetSignalDB (
+        /*[in]*/ struct ISignalDB * signalDB ) = 0;
+      virtual HRESULT __stdcall get_EndOfSignalTimeout (
+        /*[out,retval]*/ double * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_EndOfSignalTimeout (
+        /*[in]*/ double pRetVal ) = 0;
+      virtual HRESULT __stdcall get_LengthMeasurementDelta (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_LengthMeasurementDelta (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_ModFreqPeriodsToMeasure (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_ModFreqPeriodsToMeasure (
+        /*[in]*/ long pRetVal ) = 0;
+};
+
+struct __declspec(uuid("20b1ab8f-84d0-3605-94d8-93091e6db0e0"))
+CyUSBWrapper;
+    // [ default ] interface _CyUSBWrapper
+    // interface _Object
+
+struct __declspec(uuid("727cb9f5-461e-34e6-82c8-066f23c7457b"))
+ICCWVirtualRedRat2 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Write (
+        /*[in]*/ BSTR msg ) = 0;
+      virtual HRESULT __stdcall Read (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall ReadBufferCount (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("0ccf77c5-2ccc-3d54-b0d6-d54b6d1a3165"))
+CCWVirtualRedRat2;
+    // interface _Object
+    // [ default ] interface ICCWVirtualRedRat2
+
+struct __declspec(uuid("ac02d474-0df9-3d30-a1ea-5d29746c94b3"))
+CCWSignalInEventArgs;
+    // interface _Object
+    // [ default ] interface ISignalInEventArgs
+
+#pragma pack(push, 4)
+
+struct __declspec(uuid("fc121575-d304-36e0-b3a3-53a9e021b504"))
+CCWRR3DeviceInfo
+{
+    BSTR company;
+    BSTR productName;
+    long vendorID;
+    long productID;
+    long verMajor;
+    long verMinor;
+    BSTR serialNo;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("a6c28a1f-c734-3282-9e92-5adc5d31ee32"))
+ICCWRedRat3 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall UnHookEvents ( ) = 0;
+      virtual HRESULT __stdcall get_MaxNumLengths (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_MaxNumLengths (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SignalMemorySize (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SignalMemorySize (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_RCDetectorEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_RCDetectorEnabled (
+        /*[in]*/ VARIANT_BOOL pRetVal ) = 0;
+      virtual HRESULT __stdcall ClearRCSignalInQueue ( ) = 0;
+      virtual HRESULT __stdcall get_DeviceInformation (
+        /*[out,retval]*/ struct CCWRR3DeviceInfo * pRetVal ) = 0;
+      virtual HRESULT __stdcall get_LocationInformation (
+        /*[out,retval]*/ struct CCWRR3LocationInfo * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_LocationInformation (
+        /*[in]*/ struct CCWRR3LocationInfo pRetVal ) = 0;
+      virtual HRESULT __stdcall get_FirmwareVersion (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall Blink ( ) = 0;
+      virtual HRESULT __stdcall GetModulatedSignal (
+        /*[in]*/ long timeout ) = 0;
+      virtual HRESULT __stdcall CancelSignalInput ( ) = 0;
+      virtual HRESULT __stdcall OutputModulatedSignal (
+        /*[in,out]*/ struct CCWModulatedSignal * outSig ) = 0;
+      virtual HRESULT __stdcall OutputIrDaSignal (
+        /*[in,out]*/ struct CCWIrDaSignal * outSig ) = 0;
+      virtual HRESULT __stdcall OutputProntoSignal (
+        /*[in]*/ BSTR prontoSignalData ) = 0;
+      virtual HRESULT __stdcall OutputSignal (
+        /*[in]*/ BSTR deviceName,
+        /*[in]*/ BSTR signalName ) = 0;
+      virtual HRESULT __stdcall SetSignalDB (
+        /*[in]*/ struct ISignalDB * signalDB ) = 0;
+      virtual HRESULT __stdcall get_EndOfSignalTimeout (
+        /*[out,retval]*/ double * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_EndOfSignalTimeout (
+        /*[in]*/ double pRetVal ) = 0;
+      virtual HRESULT __stdcall get_LengthMeasurementDelta (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_LengthMeasurementDelta (
+        /*[in]*/ long pRetVal ) = 0;
+      virtual HRESULT __stdcall get_ModFreqPeriodsToMeasure (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_ModFreqPeriodsToMeasure (
+        /*[in]*/ long pRetVal ) = 0;
+};
+
+struct __declspec(uuid("3472a783-51bd-36be-92e7-2686adeaf32d"))
+IRedRatLookup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall FindRedRat3s (
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetRedRat3 (
+        /*[in]*/ BSTR rr3Name,
+        /*[out,retval]*/ struct ICCWRedRat3 * * pRetVal ) = 0;
+      virtual HRESULT __stdcall FindRedRat4s (
+        /*[out,retval]*/ SAFEARRAY * * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetRedRat4 (
+        /*[in]*/ BSTR rr4Name,
+        /*[out,retval]*/ struct ICCWRedRat4 * * pRetVal ) = 0;
+      virtual HRESULT __stdcall FindVirtualRR2ByDevName (
+        /*[in]*/ BSTR devName,
+        /*[out,retval]*/ struct ICCWVirtualRedRat2 * * pRetVal ) = 0;
+      virtual HRESULT __stdcall FindVirtualRR2ByUserName (
+        /*[in]*/ BSTR userName,
+        /*[out,retval]*/ struct ICCWVirtualRedRat2 * * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("c591977e-3356-331b-b11a-d22fac22dca6"))
+RCSignalInEventHandler_2;
+    // [ default ] interface _RCSignalInEventHandler_2
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("32f8a1a0-ccf6-3eaf-b63e-de73342f2ef4"))
+LearningSignalInEventHandler_2;
+    // [ default ] interface _LearningSignalInEventHandler_2
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("a6502b0a-e8b3-3d25-b596-3a2493c9edf5"))
+_CCWSignalDB : IDispatch
+{};
+
+struct __declspec(uuid("25cf2f17-6e65-344e-83c5-c72fe5299eaf"))
+_EZUSBSysWrapper : IDispatch
+{};
+
+struct __declspec(uuid("8d436e4e-317a-3e6c-afaf-eec96d4df920"))
+_BusyEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("3c97c4c1-e3c2-3ece-a5b0-6e7a4f2a4e3f"))
+_PlugEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("d87022a2-db77-35c5-95e9-af6167428c05"))
+_RCSignalInEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("d4d61706-a562-3a06-a942-b40c846db1f6"))
+_LearningSignalInEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("c11d4519-f5d8-3432-9b93-1a26ddd3bc84"))
+_IROuputsChangedEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("baa9ccf2-e5af-3a82-95c8-f17ce98eb8d5"))
+_RCSignalInEventHandler_2 : IDispatch
+{};
+
+struct __declspec(uuid("d706a227-c7d4-34ad-be67-b42caa1e5c3c"))
+_LearningSignalInEventHandler_2 : IDispatch
+{};
+
+struct __declspec(uuid("36f14dc6-e689-39eb-b094-63beae2c84c4"))
+_LocalEventHandlerWrapper : IDispatch
+{};
+
+struct __declspec(uuid("32bf6943-3bf2-3200-953f-35eeca0ef3e2"))
+_XMP1SigData : IDispatch
+{};
+
+struct __declspec(uuid("842fa61f-e643-3f63-b6be-241d6f9b1c52"))
+_CyUSBWrapper : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_RedRat =
+    {0x78ee5360,0x12d2,0x3a02,{0x9d,0x0d,0xa3,0x56,0xd8,0xe9,0x39,0x0c}};
+extern "C" const GUID __declspec(selectany) IID_IIROutputChangedEventArgs =
+    {0xe3fc878f,0x7b9e,0x32e0,{0x8c,0xdd,0x26,0x9a,0x59,0x0f,0xbe,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_CCWIROutputChangedEventArgs =
+    {0x95e30a2c,0xc724,0x3d6b,{0xb7,0x6d,0xdd,0x45,0x90,0x62,0x48,0xdf}};
+extern "C" const GUID __declspec(selectany) CLSID_CCWSignalDB =
+    {0x0d339cc4,0xc62b,0x302b,{0x91,0xfd,0x94,0x8e,0x4a,0x36,0x64,0xd1}};
+extern "C" const GUID __declspec(selectany) CLSID_EZUSBSysWrapper =
+    {0xf81111e4,0x7190,0x312c,{0xb3,0x40,0xa0,0x6a,0x51,0xa3,0xf7,0x69}};
+extern "C" const GUID __declspec(selectany) CLSID_BusyEventArgs =
+    {0x1d3ad210,0x217e,0x3ae0,{0x8c,0x0c,0x2f,0x00,0xf2,0x9c,0x63,0x94}};
+extern "C" const GUID __declspec(selectany) CLSID_PlugEventHandler =
+    {0x64b09259,0xef9d,0x3497,{0xa3,0x57,0xb8,0x2a,0xc7,0xcd,0x53,0xda}};
+extern "C" const GUID __declspec(selectany) CLSID_RedRatLookup =
+    {0xc0d48de2,0x4769,0x396e,{0xa0,0x9f,0x68,0xae,0x52,0xb0,0x7e,0x2c}};
+extern "C" const GUID __declspec(selectany) DIID_IRR4Events =
+    {0x05d85aff,0x3217,0x3159,{0x90,0x2f,0x39,0x5c,0xb3,0xe5,0x74,0x46}};
+extern "C" const GUID __declspec(selectany) CLSID_CCWRedRat4 =
+    {0x3ff9adcc,0x71c2,0x3e5c,{0xb2,0x22,0xc7,0x38,0x78,0x56,0x67,0xe9}};
+extern "C" const GUID __declspec(selectany) CLSID_RCSignalInEventHandler =
+    {0x6eee53dd,0x84ac,0x3905,{0x9d,0x65,0x94,0x97,0x5e,0x3e,0xf5,0x04}};
+extern "C" const GUID __declspec(selectany) CLSID_LearningSignalInEventHandler =
+    {0x4a6f3ac4,0x2e7b,0x3f35,{0x97,0x78,0xd2,0x97,0xf2,0x5c,0x23,0x8f}};
+extern "C" const GUID __declspec(selectany) CLSID_IROuputsChangedEventHandler =
+    {0x3a7af2ea,0x373a,0x3e5d,{0xaf,0xe5,0x79,0x8b,0x72,0xf6,0x77,0x44}};
+extern "C" const GUID __declspec(selectany) IID_ISignalInEventArgs =
+    {0x945c13e0,0x9827,0x334e,{0xba,0xf5,0x91,0xe3,0xe9,0x9b,0x46,0xff}};
+extern "C" const GUID __declspec(selectany) DIID_IRR3Events =
+    {0x9bcc4f20,0xb4da,0x3ae6,{0x97,0xfd,0xc9,0xa0,0x64,0xc8,0x73,0x33}};
+extern "C" const GUID __declspec(selectany) CLSID_CCWRedRat3 =
+    {0xd90ef270,0x72f8,0x38e2,{0xa1,0x5a,0xe7,0x1b,0x1f,0x5d,0x15,0x7d}};
+extern "C" const GUID __declspec(selectany) CLSID_LocalEventHandlerWrapper =
+    {0x0e6cbe56,0x449f,0x3fac,{0x99,0x35,0x88,0x8f,0x66,0x5c,0x0f,0x45}};
+extern "C" const GUID __declspec(selectany) CLSID_XMP1SigData =
+    {0x79ecdb14,0x9a58,0x3016,{0xa0,0x79,0x3f,0x3b,0x08,0xe2,0xc8,0x63}};
+extern "C" const GUID __declspec(selectany) IID_ISignalDB =
+    {0xfb6f0bb2,0x9efb,0x3749,{0xae,0x5f,0x20,0x51,0xeb,0x17,0x70,0x92}};
+extern "C" const GUID __declspec(selectany) IID_ICCWRedRat4 =
+    {0xb880ac5c,0x8f2c,0x3c56,{0xae,0x8b,0x9d,0x1e,0xe1,0x5d,0xb5,0xb9}};
+extern "C" const GUID __declspec(selectany) CLSID_CyUSBWrapper =
+    {0x20b1ab8f,0x84d0,0x3605,{0x94,0xd8,0x93,0x09,0x1e,0x6d,0xb0,0xe0}};
+extern "C" const GUID __declspec(selectany) IID_ICCWVirtualRedRat2 =
+    {0x727cb9f5,0x461e,0x34e6,{0x82,0xc8,0x06,0x6f,0x23,0xc7,0x45,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_CCWVirtualRedRat2 =
+    {0x0ccf77c5,0x2ccc,0x3d54,{0xb0,0xd6,0xd5,0x4b,0x6d,0x1a,0x31,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_CCWSignalInEventArgs =
+    {0xac02d474,0x0df9,0x3d30,{0xa1,0xea,0x5d,0x29,0x74,0x6c,0x94,0xb3}};
+extern "C" const GUID __declspec(selectany) IID_ICCWRedRat3 =
+    {0xa6c28a1f,0xc734,0x3282,{0x9e,0x92,0x5a,0xdc,0x5d,0x31,0xee,0x32}};
+extern "C" const GUID __declspec(selectany) IID_IRedRatLookup =
+    {0x3472a783,0x51bd,0x36be,{0x92,0xe7,0x26,0x86,0xad,0xea,0xf3,0x2d}};
+extern "C" const GUID __declspec(selectany) CLSID_RCSignalInEventHandler_2 =
+    {0xc591977e,0x3356,0x331b,{0xb1,0x1a,0xd2,0x2f,0xac,0x22,0xdc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_LearningSignalInEventHandler_2 =
+    {0x32f8a1a0,0xccf6,0x3eaf,{0xb6,0x3e,0xde,0x73,0x34,0x2f,0x2e,0xf4}};
+extern "C" const GUID __declspec(selectany) IID__CCWSignalDB =
+    {0xa6502b0a,0xe8b3,0x3d25,{0xb5,0x96,0x3a,0x24,0x93,0xc9,0xed,0xf5}};
+extern "C" const GUID __declspec(selectany) IID__EZUSBSysWrapper =
+    {0x25cf2f17,0x6e65,0x344e,{0x83,0xc5,0xc7,0x2f,0xe5,0x29,0x9e,0xaf}};
+extern "C" const GUID __declspec(selectany) IID__BusyEventArgs =
+    {0x8d436e4e,0x317a,0x3e6c,{0xaf,0xaf,0xee,0xc9,0x6d,0x4d,0xf9,0x20}};
+extern "C" const GUID __declspec(selectany) IID__PlugEventHandler =
+    {0x3c97c4c1,0xe3c2,0x3ece,{0xa5,0xb0,0x6e,0x7a,0x4f,0x2a,0x4e,0x3f}};
+extern "C" const GUID __declspec(selectany) IID__RCSignalInEventHandler =
+    {0xd87022a2,0xdb77,0x35c5,{0x95,0xe9,0xaf,0x61,0x67,0x42,0x8c,0x05}};
+extern "C" const GUID __declspec(selectany) IID__LearningSignalInEventHandler =
+    {0xd4d61706,0xa562,0x3a06,{0xa9,0x42,0xb4,0x0c,0x84,0x6d,0xb1,0xf6}};
+extern "C" const GUID __declspec(selectany) IID__IROuputsChangedEventHandler =
+    {0xc11d4519,0xf5d8,0x3432,{0x9b,0x93,0x1a,0x26,0xdd,0xd3,0xbc,0x84}};
+extern "C" const GUID __declspec(selectany) IID__RCSignalInEventHandler_2 =
+    {0xbaa9ccf2,0xe5af,0x3a82,{0x95,0xc8,0xf1,0x7c,0xe9,0x8e,0xb8,0xd5}};
+extern "C" const GUID __declspec(selectany) IID__LearningSignalInEventHandler_2 =
+    {0xd706a227,0xc7d4,0x34ad,{0xbe,0x67,0xb4,0x2c,0xaa,0x1e,0x5c,0x3c}};
+extern "C" const GUID __declspec(selectany) IID__LocalEventHandlerWrapper =
+    {0x36f14dc6,0xe689,0x39eb,{0xb0,0x94,0x63,0xbe,0xae,0x2c,0x84,0xc4}};
+extern "C" const GUID __declspec(selectany) IID__XMP1SigData =
+    {0x32bf6943,0x3bf2,0x3200,{0x95,0x3f,0x35,0xee,0xca,0x0e,0xf3,0xe2}};
+extern "C" const GUID __declspec(selectany) IID__CyUSBWrapper =
+    {0x842fa61f,0xe643,0x3f63,{0xb6,0xbe,0x24,0x1d,0x6f,0x9b,0x1c,0x52}};
+
+#pragma pack(pop)

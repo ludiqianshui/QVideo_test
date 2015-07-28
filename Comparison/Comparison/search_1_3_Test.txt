@@ -1,0 +1,13 @@
+Board: STx7105-PDK  [32-bit mode]
+
+
+U-Boot 1.3.1 (Apr  9 2010 - 17:49:55) - stm23-2009-04-23
+
+DRAM:  256 MiB
+NOR:    16 MiB
+In:    serial
+Out:   serial
+Err:   serialcmd_logo_strip.c:video_display_bitmap
+Display-bmp: 252 x 42  with 0 colors
+pressedKey = 0[uboot] verify parameters......   ...s=bootm a0220000
+Hit ENTER key to stop autoboot:  1
